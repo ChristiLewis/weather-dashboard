@@ -40,7 +40,8 @@
         <form>
             <label for='name'><em>Enter the Name of a City</em></label>
             <!--ADD CLASS AFTER ID FOR STYLING-->
-            <input type='text' placeholder='Your Favorite City' name='name' class='form-input' style='font-size: xx-large'/>
+            <input type='text' placeholder='Your Favorite City' name='name' class='form-input'
+                style='font-size: xx-large' />
         </form>
         <!--ADD A QUOTE-->
         <p>"Two roads diverged in a wood, and I—
@@ -53,8 +54,107 @@
     </section>
 
     <article id='PROJECTS' class='lens-PROJECTS'>
-        
+        <h2>WEATHER</h2>
+        <div class='PROJECT-1'>
+            <!--CITY WEATHER START-->
+            <div class='jumbotron container-fluid mt-2 text-center p-2 transparent'>
+                <h2><span class='white-text'>Weather or Not!</span></h2>
+            </div>
+            <!--NOTE-GIVING UP ON SINGLE QUOTES FOR HTML :) -->
+            <div class="col s12 z-depth-5" id="weather">
+                <!--ROW FOR CITY SEARCH-->
+                <div class="row">
+                    <div class="col-sm-4 bg-light">
+                        <!--CREATE HTML FORM FOR INPUTS-->
+                        <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+                        <!--TEXT BOX TO CAPTURE THE NAME OF THE CITY REQUESTED-->
+                        <div class="z-depth-5 input-group mb-3">
+                            <input type="text" class="form-control" id="search-city" aria-label="City Search"
+                                aria-describedby="search-button">
+                            <div class="input-group-append">
+                                <button class=" btn bg-primary text-light" id="search-button"><i
+                                        class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        <!--SEARCH CITY CLEAR HISTORY-->
+                        <button class="btn btn-primary" type="button" id="clear-history">Clear history</button>
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                    <div class="col s12 z-depth-5">
+                        <div class="row ml-2 border border-dark rounded">
+                            <div class="col-sm-12" id="current-weather">
+                                <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                                <p>Temperature:<span class="current" id="temperature"></span></p>
+                                <p>Humidity:<span class="current" id="humidity"></span></p>
+                                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                                <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white"
+                                        id="uv-index"></span></p>
+                            </div>
+                        </div>
+                        <!--ROW FOR FUTURE DATA-->
+                        <div class="col-s12" id="future-weather">
+                            <h3>5-Day Forecast:</h3>
+                            <div class="row text-light">
+                                <div
+                                    class="col s12 m6 l2 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                    <p id="fDate0"></p>
+                                    <p id="fImg0"></p>
+                                    <p>Temp:<span id="fTemp0"></span></p>
+                                    <p>Humidity:<span id="fHumidity0"></span></p>
+                                </div>
+                            </div>
+                            <div
+                                class="col s12 m6 l2 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                <p id="fDate1"></p>
+                                <p id="fImg1"></p>
+                                <p>Temp:<span id="fTemp1"></span></p>
+                                <p>Humidity:<span id="fHumidity1"></span></p>
+                            </div>
+                            <div
+                                class="col s12 m6 l2 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                <p id="fDate2"></p>
+                                <p id="fImg2"></p>
+                                <p>Temp:<span id="fTemp2"></span></p>
+                                <p>Humidity:<span id="fHumidity2"></span></p>
+                            </div>
+                            <div
+                                class="col s12 m6 l2 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                <p id="fDate3"></p>
+                                <p id="fImg3"></p>
+                                <p>Temp:<span id="fTemp3"></span></p>
+                                <p>Humidity:<span id="fHumidity3"></span></p>
+                            </div>
+                            <div
+                                class="col s12 m6 l2 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                <p id="fDate4"></p>
+                                <p id="fImg4"></p>
+                                <p>Temp:<span id="fTemp4"></span></p>
+                                <p>Humidity:<span id="fHumidity4"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <!-- "WEATHER" end -->
+        </div>
     </article>
+    <!--PLACEHOLDERS FOR THE NOT SECTION-->
+    <article id="CONTACT" class="lens-CONTACT">
+        <h2>NOT</h2>
+    </article>
+    <!--BELOW LINKS THE JS FILE NEEDED FOR MATERIALIZE-->
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <!--BELOW LINKS THE JS FILE FROM TASKINATOR NEEDED TO MAKE THE THINGS TO DO LIST INTERACTIVE AND FUNCTIONAL NEEDS ALOT OF WORK-->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/function.js"></script>
 </body>
+
+<!--SIMPLE FOOTER-->
+<footer>
+    <h4> <span class="heart">❤️</span> Made with love by<span><em>Weather or Not!</em></span></h4>
+</footer>
 
 </html>
