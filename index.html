@@ -15,8 +15,46 @@
     <link rel="stylesheet" href="./assets/css/stylesheet.css" />
 </head>
 
-<body>
 
+<body>
+    <header>
+        <!--WHEN THERE ARE MORE PAGES, MAKE SURE TO INDEX <a href="/">Weather or Not</a>-->
+        <h1>Weather or Not!</h1>
+        <!-- ADD NAV TABS-->
+        <nav>
+            <!-- UNORDERED LIST-->
+            <ul>
+                <!--KEEPING REFERENCE TO LINK EXISTING STYLESHEET FROM MY PORTFOLIO-->
+                <li>
+                    <a href='#PROJECTS'>WEATHER</a>
+                </li>
+                <li>
+                    <a href='#CONTACT'>NOT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--ADDING TEST HTML AND CSS TEMPLATES HERE-->
+    <section class='lens'>
+        <!--ADD FORM ELEMENT FOR CITY INPUT-->
+        <form>
+            <label for='name'><em>Enter the Name of a City</em></label>
+            <!--ADD CLASS AFTER ID FOR STYLING-->
+            <input type='text' placeholder='Your Favorite City' name='name' class='form-input' style='font-size: xx-large'/>
+        </form>
+        <!--ADD A QUOTE-->
+        <p>"Two roads diverged in a wood, and I—
+            I took the one less traveled by,
+            And that has made all the difference." </br>
+
+            -Robert Frost, from the poem 'The Road Not Taken'.
+        </p>
+        <img src='./assets/images/lens.jpeg' alt='compass'>
+    </section>
+
+    <article id='PROJECTS' class='lens-PROJECTS'>
+        
+    </article>
 </body>
 
 </html>
