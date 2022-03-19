@@ -42,8 +42,9 @@ THEN I am again presented with current and future conditions for that city
 ## Usage ℹ️
 * People living in or traveling to and from major cities worldwide.
 
-![Weather or Not Screenshot](assets/Images/weather-or-not.png)
+
 \ [Weather or Not!](https://christilewis.github.io/weather-dashboard)
+![Screenshot (1230)](https://user-images.githubusercontent.com/95652938/159122028-c3f1c135-e0fd-4e88-841b-2357b6ef84ef.png)
 
 
 ## Credits 🎺
