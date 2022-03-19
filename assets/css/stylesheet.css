@@ -31,7 +31,7 @@ header {
     position:sticky;
     top: 0;
     /*redirect filename to match*/
-    background-image: url("../Images/miami2.jpg");
+    background-image: url("./Images/lens.jpeg");
     background-size: cover;
     /*Change b-p from center to 80% for final */
     background-position: 80%;
@@ -141,7 +141,7 @@ section p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: url("../Images/miami2.jpg");
+    background-image: url("../Images/lens.jpeg");
     /* height removed NA flexbox */
     background-size: cover;
     /*Change b-p from center to 80% for final */
@@ -512,4 +512,19 @@ article {
     justify-content: space-around;
     padding: 25px;
 }
-
+/* ADDED TO FIX MATERIALIZE*/
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+  }
+  @media only screen and (min-width: 601px) {
+    .container {
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+  }
