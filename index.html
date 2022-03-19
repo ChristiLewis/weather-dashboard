@@ -1,12 +1,153 @@
+<!--CONTENT BELOW IS DIRECTLY FROM RUNNING HTML:5-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
+    <!--IMPORT GOOGLE ICON FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--IMPORT MATERIALIZE.CSS -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <!--ADDING STYLESHEET LINK TO RUN WITH IMPORTED CSS FILE-->
+    <!-- <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" /> -->
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
 </head>
+
 <body>
-    
+    <header>
+        <!--WHEN THERE ARE MORE PAGES, MAKE SURE TO INDEX <a href="/">Weather or Not</a>-->
+        <h1>Weather or Not!</h1>
+        <!-- ADD NAV TABS-->
+        <nav class="navbar-fixed">
+            <p class="center hide-on-med-and-down">"Two roads diverged in a wood, and I—
+                I took the one less traveled by,
+                And that has made all the difference."
+                -Robert Frost, from 'The Road Not Taken'.
+            </p>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"></a>
+                <!-- UNORDERED LIST-->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#current-weather">Weather?</a></li>
+                    <li><a href="#CONTACT">Not!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article id="PROJECTS" class="lens">
+        <h2 class="left"><em><strong>Whether</strong></em></h2>
+            <p>More Features are Coming Soon!</p>
+        <div class="row">
+            <!--CITY WEATHER START-->
+            <div class="jumbotron container-fluid mt-2 text-center p-2">
+                <h2><span class='white-text'>Weather or Not!</span></h2>
+            </div>
+            <!--NOTE-GIVING UP ON SINGLE QUOTES FOR HTML :) -->
+            <div class="col s12 z-depth-5" id="weather">
+                <!--ROW FOR CITY SEARCH-->
+                <div class="row center">
+                    <div class="col-sm-4 bg-light">
+                        <!--CREATE HTML FORM FOR INPUTS-->
+                        <h4 class="pt-1">Search for a City:</h4>
+                        <!--TEXT BOX TO CAPTURE THE NAME OF THE CITY REQUESTED-->
+                        <div class="z-depth-5 input-group mb-3">
+                            <input type="text" class="form-control lime accent-1" id="search-city" aria-label="City Search"
+                                aria-describedby="search-button">
+                            <button type="submit" for="search-city" class=" btn bg-primary text-light light-green accent"
+                                id="search-button">Click after your City is entered!<i class="fa fa-search"></i>
+                            </button>
+                            </br>
+                        </div>
+                        <!--SEARCH CITY CLEAR HISTORY-->
+                        <button class="btn btn-primary" type="button" id="clear-history"><i class="material-icons">refresh</i></button>
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                    <div class="col s12 z-depth-5">
+                        <div class="row ml-2 border border-dark rounded">
+                            <div class="col-sm-12 lime lighten" id="current-weather">
+                                <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                                <p>Temperature:<span class="current" id="temperature"></span></p>
+                                <p>Humidity:<span class="current" id="humidity"></span></p>
+                                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                                <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white"
+                                        id="uv-index"></span></p>
+                            </div>
+                        </div>
+                        <!--ROW FOR FUTURE DATA-->
+                        <div class="col s12" id="future-weather">
+                            <h3>5-Day Forecast:</h3>
+                            <div class="row text-light">
+                                <div
+                                    class="col s12 m6 l12 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded teal lighten-4">
+                                    <p id="fDate0"></p>
+                                    <p id="fImg0"></p>
+                                    <p>Temp:<span id="fTemp0"></span></p>
+                                    <p>Humidity:<span id="fHumidity0"></span></p>
+                                </div>
+                            </div>
+                        </br>
+                            <div
+                                class="col s12 m6 l12 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded teal lighten-4">
+                                <p id="fDate1"></p>
+                                <p id="fImg1"></p>
+                                <p>Temp:<span id="fTemp1"></span></p>
+                                <p>Humidity:<span id="fHumidity1"></span></p>
+                            </div>
+                        </br>
+                            <div
+                                class="col s12 m6 l12 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded teal lighten-4">
+                                <p id="fDate2"></p>
+                                <p id="fImg2"></p>
+                                <p>Temp:<span id="fTemp2"></span></p>
+                                <p>Humidity:<span id="fHumidity2"></span></p>
+                            </div>
+                        </br>
+                            <div
+                                class="col s12 m6 l12 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded teal lighten-4">
+                                <p id="fDate3"></p>
+                                <p id="fImg3"></p>
+                                <p>Temp:<span id="fTemp3"></span></p>
+                                <p>Humidity:<span id="fHumidity3"></span></p>
+                            </div>
+                        </br>
+                            <div
+                                class="col s12 m6 l12 z-depth-5 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded teal lighten-4">
+                                <p id="fDate4"></p>
+                                <p id="fImg4"></p>
+                                <p>Temp:<span id="fTemp4"></span></p>
+                                <p>Humidity:<span id="fHumidity4"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <!-- "WEATHER" end -->
+        </div>
+    </article>
+    <!--PLACEHOLDERS FOR THE NOT SECTION-->
+    <article id="CONTACT" class="lens">
+        <h2 class="left"><strong>NOT</strong></h2>
+            <p class="left">Coming Soon!</p>
+    </article>
+    <!--SIMPLE FOOTER-->
+    <footer class="lens">
+        <h4> <span class="heart">❤️</span> Made with love by<span><em> Weather or Not!</em></span></h4>
+    </footer>
+    <!--BELOW LINKS THE JS FILE NEEDED FOR MATERIALIZE-->
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <!--BELOW LINKS THE JS FILE FROM TASKINATOR NEEDED TO MAKE THE THINGS TO DO LIST INTERACTIVE AND FUNCTIONAL NEEDS ALOT OF WORK-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
 </body>
+
+
+
 </html>
