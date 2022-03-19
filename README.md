@@ -3,7 +3,7 @@
 
 ## Overview 🌐
 
-Everybody checks the weather before they dress for the day.  Whether you care about the whether or not, it affects your wear and where!
+Everybody checks the weather before they dress for the day.  Whether you care about the weather or not, it affects your wear and where!
 
 ## Contents ✔️
 * [Overview](#overview)
@@ -46,6 +46,8 @@ THEN I am again presented with current and future conditions for that city
 \ [Weather or Not!](https://christilewis.github.io/weather-dashboard)
 ![Screenshot (1230)![Screenshot (1231)](https://user-images.githubusercontent.com/95652938/159122275-ba8d86d0-e864-431e-8cce-02ccdbbd916d.png)
 ](https://user-images.githubusercontent.com/95652938/159122028-c3f1c135-e0fd-4e88-841b-2357b6ef84ef.png)
+![Screenshot (1231)](https://user-images.githubusercontent.com/95652938/159122478-504e906c-0b67-4e68-97d5-aaf91cb29aaa.png)
+
 
 
 ## Credits 🎺
@@ -53,7 +55,7 @@ THEN I am again presented with current and future conditions for that city
 
 
 ## License 👮
-* Contents are credited as inspired by the bootcamp mentioned above. UM Coding Bootcamp content it primarily MIT license, open source.
+* Contents are credited as inspired by the Bootcamp mentioned above. UM Coding Bootcamp content is primarily MIT license, open-source.
 
 ## Badges 🥇
 * There are no badges generated at this time. For more information: [shields.io](https://shields.io/)
