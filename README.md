@@ -57,7 +57,7 @@ THEN I am again presented with current and future conditions for that city
 * There are no badges generated at this time. For more information: [shields.io](https://shields.io/)
 
 ## Features 🍒
-* 3rd party api example
+* Server-side api example.
 
 ## How-to-Contribute 💻
 * Any recommendations?  Please see [contributorCovenant](https://www.contributor-covenant.org)
